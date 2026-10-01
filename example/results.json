@@ -1,0 +1,1693 @@
+{
+  "data_sha256": "c4a903f63f6ef439edcec1f88b24157c3e1707da295d87f7d4e2794016f95b1e",
+  "selected_model": "weekday_mean4",
+  "splits": {
+    "initial_history": {
+      "start": "2025-10-01",
+      "end": "2026-02-17",
+      "days": 140
+    },
+    "validation": {
+      "start": "2026-02-18",
+      "end": "2026-05-12",
+      "days": 84
+    },
+    "calibration": {
+      "start": "2026-05-13",
+      "end": "2026-08-04",
+      "days": 84
+    },
+    "test": {
+      "start": "2026-08-05",
+      "end": "2026-09-29",
+      "days": 56
+    }
+  },
+  "validation": {
+    "seasonal_naive": {
+      "n": 84,
+      "mae": 13.392857142857142,
+      "rmse": 17.26922669016162,
+      "bias": -2.630952380952381,
+      "wape": 0.0820808405078068
+    },
+    "weekday_mean4": {
+      "n": 84,
+      "mae": 11.467261904761905,
+      "rmse": 14.344844145944165,
+      "bias": -5.270833333333333,
+      "wape": 0.07027943966146213
+    },
+    "weekday_trend8": {
+      "n": 84,
+      "mae": 11.880527210884354,
+      "rmse": 15.36947426519634,
+      "bias": -1.1951530612244905,
+      "wape": 0.07281221988284588
+    }
+  },
+  "calibration": {
+    "absolute_error_quantile": 0.9,
+    "n": 84,
+    "radius": 21
+  },
+  "test": {
+    "seasonal_naive": {
+      "n": 56,
+      "mae": 13.017857142857142,
+      "rmse": 17.10941678892483,
+      "bias": -5.410714285714286,
+      "wape": 0.05743775606681374
+    },
+    "weekday_mean4": {
+      "n": 56,
+      "mae": 16.21875,
+      "rmse": 19.66071023095845,
+      "bias": -12.397321428571429,
+      "wape": 0.07156082571698708
+    },
+    "weekday_trend8": {
+      "n": 56,
+      "mae": 14.879464285714286,
+      "rmse": 18.079641268266712,
+      "bias": 0.7302295918367351,
+      "wape": 0.06565159155373464
+    }
+  },
+  "test_interval_coverage": 0.6785714285714286,
+  "test_by_horizon": {
+    "1": {
+      "n": 8,
+      "mae": 13.71875,
+      "rmse": 18.568496506179493,
+      "bias": -10.65625,
+      "wape": 0.05454771371769384
+    },
+    "2": {
+      "n": 8,
+      "mae": 16.4375,
+      "rmse": 20.136254616983766,
+      "bias": -16.4375,
+      "wape": 0.06946645536185948
+    },
+    "3": {
+      "n": 8,
+      "mae": 15.4375,
+      "rmse": 21.219463353251893,
+      "bias": -11.75,
+      "wape": 0.06548250265111347
+    },
+    "4": {
+      "n": 8,
+      "mae": 18.125,
+      "rmse": 21.441417280581057,
+      "bias": -10.25,
+      "wape": 0.100974930362117
+    },
+    "5": {
+      "n": 8,
+      "mae": 18.03125,
+      "rmse": 19.840575533486927,
+      "bias": -11.59375,
+      "wape": 0.1101145038167939
+    },
+    "6": {
+      "n": 8,
+      "mae": 15.25,
+      "rmse": 18.585528644620254,
+      "bias": -15.25,
+      "wape": 0.05708937763219467
+    },
+    "7": {
+      "n": 8,
+      "mae": 16.53125,
+      "rmse": 17.50647201751398,
+      "bias": -10.84375,
+      "wape": 0.06553518334985134
+    }
+  },
+  "test_predictions": {
+    "seasonal_naive": [
+      {
+        "train_end": "2026-08-04",
+        "date": "2026-08-05",
+        "horizon": 1,
+        "actual": 259,
+        "prediction": 216,
+        "error": -43
+      },
+      {
+        "train_end": "2026-08-04",
+        "date": "2026-08-06",
+        "horizon": 2,
+        "actual": 210,
+        "prediction": 185,
+        "error": -25
+      },
+      {
+        "train_end": "2026-08-04",
+        "date": "2026-08-07",
+        "horizon": 3,
+        "actual": 230,
+        "prediction": 221,
+        "error": -9
+      },
+      {
+        "train_end": "2026-08-04",
+        "date": "2026-08-08",
+        "horizon": 4,
+        "actual": 183,
+        "prediction": 137,
+        "error": -46
+      },
+      {
+        "train_end": "2026-08-04",
+        "date": "2026-08-09",
+        "horizon": 5,
+        "actual": 139,
+        "prediction": 128,
+        "error": -11
+      },
+      {
+        "train_end": "2026-08-04",
+        "date": "2026-08-10",
+        "horizon": 6,
+        "actual": 252,
+        "prediction": 227,
+        "error": -25
+      },
+      {
+        "train_end": "2026-08-04",
+        "date": "2026-08-11",
+        "horizon": 7,
+        "actual": 239,
+        "prediction": 217,
+        "error": -22
+      },
+      {
+        "train_end": "2026-08-11",
+        "date": "2026-08-12",
+        "horizon": 1,
+        "actual": 257,
+        "prediction": 259,
+        "error": 2
+      },
+      {
+        "train_end": "2026-08-11",
+        "date": "2026-08-13",
+        "horizon": 2,
+        "actual": 233,
+        "prediction": 210,
+        "error": -23
+      },
+      {
+        "train_end": "2026-08-11",
+        "date": "2026-08-14",
+        "horizon": 3,
+        "actual": 237,
+        "prediction": 230,
+        "error": -7
+      },
+      {
+        "train_end": "2026-08-11",
+        "date": "2026-08-15",
+        "horizon": 4,
+        "actual": 189,
+        "prediction": 183,
+        "error": -6
+      },
+      {
+        "train_end": "2026-08-11",
+        "date": "2026-08-16",
+        "horizon": 5,
+        "actual": 158,
+        "prediction": 139,
+        "error": -19
+      },
+      {
+        "train_end": "2026-08-11",
+        "date": "2026-08-17",
+        "horizon": 6,
+        "actual": 244,
+        "prediction": 252,
+        "error": 8
+      },
+      {
+        "train_end": "2026-08-11",
+        "date": "2026-08-18",
+        "horizon": 7,
+        "actual": 249,
+        "prediction": 239,
+        "error": -10
+      },
+      {
+        "train_end": "2026-08-18",
+        "date": "2026-08-19",
+        "horizon": 1,
+        "actual": 248,
+        "prediction": 257,
+        "error": 9
+      },
+      {
+        "train_end": "2026-08-18",
+        "date": "2026-08-20",
+        "horizon": 2,
+        "actual": 242,
+        "prediction": 233,
+        "error": -9
+      },
+      {
+        "train_end": "2026-08-18",
+        "date": "2026-08-21",
+        "horizon": 3,
+        "actual": 247,
+        "prediction": 237,
+        "error": -10
+      },
+      {
+        "train_end": "2026-08-18",
+        "date": "2026-08-22",
+        "horizon": 4,
+        "actual": 188,
+        "prediction": 189,
+        "error": 1
+      },
+      {
+        "train_end": "2026-08-18",
+        "date": "2026-08-23",
+        "horizon": 5,
+        "actual": 156,
+        "prediction": 158,
+        "error": 2
+      },
+      {
+        "train_end": "2026-08-18",
+        "date": "2026-08-24",
+        "horizon": 6,
+        "actual": 258,
+        "prediction": 244,
+        "error": -14
+      },
+      {
+        "train_end": "2026-08-18",
+        "date": "2026-08-25",
+        "horizon": 7,
+        "actual": 249,
+        "prediction": 249,
+        "error": 0
+      },
+      {
+        "train_end": "2026-08-25",
+        "date": "2026-08-26",
+        "horizon": 1,
+        "actual": 241,
+        "prediction": 248,
+        "error": 7
+      },
+      {
+        "train_end": "2026-08-25",
+        "date": "2026-08-27",
+        "horizon": 2,
+        "actual": 234,
+        "prediction": 242,
+        "error": 8
+      },
+      {
+        "train_end": "2026-08-25",
+        "date": "2026-08-28",
+        "horizon": 3,
+        "actual": 232,
+        "prediction": 247,
+        "error": 15
+      },
+      {
+        "train_end": "2026-08-25",
+        "date": "2026-08-29",
+        "horizon": 4,
+        "actual": 161,
+        "prediction": 188,
+        "error": 27
+      },
+      {
+        "train_end": "2026-08-25",
+        "date": "2026-08-30",
+        "horizon": 5,
+        "actual": 176,
+        "prediction": 156,
+        "error": -20
+      },
+      {
+        "train_end": "2026-08-25",
+        "date": "2026-08-31",
+        "horizon": 6,
+        "actual": 280,
+        "prediction": 258,
+        "error": -22
+      },
+      {
+        "train_end": "2026-08-25",
+        "date": "2026-09-01",
+        "horizon": 7,
+        "actual": 258,
+        "prediction": 249,
+        "error": -9
+      },
+      {
+        "train_end": "2026-09-01",
+        "date": "2026-09-02",
+        "horizon": 1,
+        "actual": 243,
+        "prediction": 241,
+        "error": -2
+      },
+      {
+        "train_end": "2026-09-01",
+        "date": "2026-09-03",
+        "horizon": 2,
+        "actual": 231,
+        "prediction": 234,
+        "error": 3
+      },
+      {
+        "train_end": "2026-09-01",
+        "date": "2026-09-04",
+        "horizon": 3,
+        "actual": 239,
+        "prediction": 232,
+        "error": -7
+      },
+      {
+        "train_end": "2026-09-01",
+        "date": "2026-09-05",
+        "horizon": 4,
+        "actual": 174,
+        "prediction": 161,
+        "error": -13
+      },
+      {
+        "train_end": "2026-09-01",
+        "date": "2026-09-06",
+        "horizon": 5,
+        "actual": 181,
+        "prediction": 176,
+        "error": -5
+      },
+      {
+        "train_end": "2026-09-01",
+        "date": "2026-09-07",
+        "horizon": 6,
+        "actual": 278,
+        "prediction": 280,
+        "error": 2
+      },
+      {
+        "train_end": "2026-09-01",
+        "date": "2026-09-08",
+        "horizon": 7,
+        "actual": 269,
+        "prediction": 258,
+        "error": -11
+      },
+      {
+        "train_end": "2026-09-08",
+        "date": "2026-09-09",
+        "horizon": 1,
+        "actual": 249,
+        "prediction": 243,
+        "error": -6
+      },
+      {
+        "train_end": "2026-09-08",
+        "date": "2026-09-10",
+        "horizon": 2,
+        "actual": 246,
+        "prediction": 231,
+        "error": -15
+      },
+      {
+        "train_end": "2026-09-08",
+        "date": "2026-09-11",
+        "horizon": 3,
+        "actual": 227,
+        "prediction": 239,
+        "error": 12
+      },
+      {
+        "train_end": "2026-09-08",
+        "date": "2026-09-12",
+        "horizon": 4,
+        "actual": 197,
+        "prediction": 174,
+        "error": -23
+      },
+      {
+        "train_end": "2026-09-08",
+        "date": "2026-09-13",
+        "horizon": 5,
+        "actual": 142,
+        "prediction": 181,
+        "error": 39
+      },
+      {
+        "train_end": "2026-09-08",
+        "date": "2026-09-14",
+        "horizon": 6,
+        "actual": 272,
+        "prediction": 278,
+        "error": 6
+      },
+      {
+        "train_end": "2026-09-08",
+        "date": "2026-09-15",
+        "horizon": 7,
+        "actual": 245,
+        "prediction": 269,
+        "error": 24
+      },
+      {
+        "train_end": "2026-09-15",
+        "date": "2026-09-16",
+        "horizon": 1,
+        "actual": 247,
+        "prediction": 249,
+        "error": 2
+      },
+      {
+        "train_end": "2026-09-15",
+        "date": "2026-09-17",
+        "horizon": 2,
+        "actual": 246,
+        "prediction": 246,
+        "error": 0
+      },
+      {
+        "train_end": "2026-09-15",
+        "date": "2026-09-18",
+        "horizon": 3,
+        "actual": 235,
+        "prediction": 227,
+        "error": -8
+      },
+      {
+        "train_end": "2026-09-15",
+        "date": "2026-09-19",
+        "horizon": 4,
+        "actual": 172,
+        "prediction": 197,
+        "error": 25
+      },
+      {
+        "train_end": "2026-09-15",
+        "date": "2026-09-20",
+        "horizon": 5,
+        "actual": 182,
+        "prediction": 142,
+        "error": -40
+      },
+      {
+        "train_end": "2026-09-15",
+        "date": "2026-09-21",
+        "horizon": 6,
+        "actual": 272,
+        "prediction": 272,
+        "error": 0
+      },
+      {
+        "train_end": "2026-09-15",
+        "date": "2026-09-22",
+        "horizon": 7,
+        "actual": 262,
+        "prediction": 245,
+        "error": -17
+      },
+      {
+        "train_end": "2026-09-22",
+        "date": "2026-09-23",
+        "horizon": 1,
+        "actual": 268,
+        "prediction": 247,
+        "error": -21
+      },
+      {
+        "train_end": "2026-09-22",
+        "date": "2026-09-24",
+        "horizon": 2,
+        "actual": 251,
+        "prediction": 246,
+        "error": -5
+      },
+      {
+        "train_end": "2026-09-22",
+        "date": "2026-09-25",
+        "horizon": 3,
+        "actual": 239,
+        "prediction": 235,
+        "error": -4
+      },
+      {
+        "train_end": "2026-09-22",
+        "date": "2026-09-26",
+        "horizon": 4,
+        "actual": 172,
+        "prediction": 172,
+        "error": 0
+      },
+      {
+        "train_end": "2026-09-22",
+        "date": "2026-09-27",
+        "horizon": 5,
+        "actual": 176,
+        "prediction": 182,
+        "error": 6
+      },
+      {
+        "train_end": "2026-09-22",
+        "date": "2026-09-28",
+        "horizon": 6,
+        "actual": 281,
+        "prediction": 272,
+        "error": -9
+      },
+      {
+        "train_end": "2026-09-22",
+        "date": "2026-09-29",
+        "horizon": 7,
+        "actual": 247,
+        "prediction": 262,
+        "error": 15
+      }
+    ],
+    "weekday_mean4": [
+      {
+        "train_end": "2026-08-04",
+        "date": "2026-08-05",
+        "horizon": 1,
+        "actual": 259,
+        "prediction": 219.75,
+        "error": -39.25,
+        "lower": 198.75,
+        "upper": 240.75,
+        "covered": false
+      },
+      {
+        "train_end": "2026-08-04",
+        "date": "2026-08-06",
+        "horizon": 2,
+        "actual": 210,
+        "prediction": 197.25,
+        "error": -12.75,
+        "lower": 176.25,
+        "upper": 218.25,
+        "covered": true
+      },
+      {
+        "train_end": "2026-08-04",
+        "date": "2026-08-07",
+        "horizon": 3,
+        "actual": 230,
+        "prediction": 192.25,
+        "error": -37.75,
+        "lower": 171.25,
+        "upper": 213.25,
+        "covered": false
+      },
+      {
+        "train_end": "2026-08-04",
+        "date": "2026-08-08",
+        "horizon": 4,
+        "actual": 183,
+        "prediction": 149,
+        "error": -34,
+        "lower": 128,
+        "upper": 170,
+        "covered": false
+      },
+      {
+        "train_end": "2026-08-04",
+        "date": "2026-08-09",
+        "horizon": 5,
+        "actual": 139,
+        "prediction": 130.75,
+        "error": -8.25,
+        "lower": 109.75,
+        "upper": 151.75,
+        "covered": true
+      },
+      {
+        "train_end": "2026-08-04",
+        "date": "2026-08-10",
+        "horizon": 6,
+        "actual": 252,
+        "prediction": 228.25,
+        "error": -23.75,
+        "lower": 207.25,
+        "upper": 249.25,
+        "covered": false
+      },
+      {
+        "train_end": "2026-08-04",
+        "date": "2026-08-11",
+        "horizon": 7,
+        "actual": 239,
+        "prediction": 217.75,
+        "error": -21.25,
+        "lower": 196.75,
+        "upper": 238.75,
+        "covered": false
+      },
+      {
+        "train_end": "2026-08-11",
+        "date": "2026-08-12",
+        "horizon": 1,
+        "actual": 257,
+        "prediction": 234.25,
+        "error": -22.75,
+        "lower": 213.25,
+        "upper": 255.25,
+        "covered": false
+      },
+      {
+        "train_end": "2026-08-11",
+        "date": "2026-08-13",
+        "horizon": 2,
+        "actual": 233,
+        "prediction": 196.5,
+        "error": -36.5,
+        "lower": 175.5,
+        "upper": 217.5,
+        "covered": false
+      },
+      {
+        "train_end": "2026-08-11",
+        "date": "2026-08-14",
+        "horizon": 3,
+        "actual": 237,
+        "prediction": 202,
+        "error": -35,
+        "lower": 181,
+        "upper": 223,
+        "covered": false
+      },
+      {
+        "train_end": "2026-08-11",
+        "date": "2026-08-15",
+        "horizon": 4,
+        "actual": 189,
+        "prediction": 154.5,
+        "error": -34.5,
+        "lower": 133.5,
+        "upper": 175.5,
+        "covered": false
+      },
+      {
+        "train_end": "2026-08-11",
+        "date": "2026-08-16",
+        "horizon": 5,
+        "actual": 158,
+        "prediction": 137.75,
+        "error": -20.25,
+        "lower": 116.75,
+        "upper": 158.75,
+        "covered": true
+      },
+      {
+        "train_end": "2026-08-11",
+        "date": "2026-08-17",
+        "horizon": 6,
+        "actual": 244,
+        "prediction": 232.5,
+        "error": -11.5,
+        "lower": 211.5,
+        "upper": 253.5,
+        "covered": true
+      },
+      {
+        "train_end": "2026-08-11",
+        "date": "2026-08-18",
+        "horizon": 7,
+        "actual": 249,
+        "prediction": 224,
+        "error": -25,
+        "lower": 203,
+        "upper": 245,
+        "covered": false
+      },
+      {
+        "train_end": "2026-08-18",
+        "date": "2026-08-19",
+        "horizon": 1,
+        "actual": 248,
+        "prediction": 239,
+        "error": -9,
+        "lower": 218,
+        "upper": 260,
+        "covered": true
+      },
+      {
+        "train_end": "2026-08-18",
+        "date": "2026-08-20",
+        "horizon": 2,
+        "actual": 242,
+        "prediction": 208,
+        "error": -34,
+        "lower": 187,
+        "upper": 229,
+        "covered": false
+      },
+      {
+        "train_end": "2026-08-18",
+        "date": "2026-08-21",
+        "horizon": 3,
+        "actual": 247,
+        "prediction": 219.25,
+        "error": -27.75,
+        "lower": 198.25,
+        "upper": 240.25,
+        "covered": false
+      },
+      {
+        "train_end": "2026-08-18",
+        "date": "2026-08-22",
+        "horizon": 4,
+        "actual": 188,
+        "prediction": 162,
+        "error": -26,
+        "lower": 141,
+        "upper": 183,
+        "covered": false
+      },
+      {
+        "train_end": "2026-08-18",
+        "date": "2026-08-23",
+        "horizon": 5,
+        "actual": 156,
+        "prediction": 144.5,
+        "error": -11.5,
+        "lower": 123.5,
+        "upper": 165.5,
+        "covered": true
+      },
+      {
+        "train_end": "2026-08-18",
+        "date": "2026-08-24",
+        "horizon": 6,
+        "actual": 258,
+        "prediction": 238,
+        "error": -20,
+        "lower": 217,
+        "upper": 259,
+        "covered": true
+      },
+      {
+        "train_end": "2026-08-18",
+        "date": "2026-08-25",
+        "horizon": 7,
+        "actual": 249,
+        "prediction": 232.25,
+        "error": -16.75,
+        "lower": 211.25,
+        "upper": 253.25,
+        "covered": true
+      },
+      {
+        "train_end": "2026-08-25",
+        "date": "2026-08-26",
+        "horizon": 1,
+        "actual": 241,
+        "prediction": 245,
+        "error": 4,
+        "lower": 224,
+        "upper": 266,
+        "covered": true
+      },
+      {
+        "train_end": "2026-08-25",
+        "date": "2026-08-27",
+        "horizon": 2,
+        "actual": 234,
+        "prediction": 217.5,
+        "error": -16.5,
+        "lower": 196.5,
+        "upper": 238.5,
+        "covered": true
+      },
+      {
+        "train_end": "2026-08-25",
+        "date": "2026-08-28",
+        "horizon": 3,
+        "actual": 232,
+        "prediction": 233.75,
+        "error": 1.75,
+        "lower": 212.75,
+        "upper": 254.75,
+        "covered": true
+      },
+      {
+        "train_end": "2026-08-25",
+        "date": "2026-08-29",
+        "horizon": 4,
+        "actual": 161,
+        "prediction": 174.25,
+        "error": 13.25,
+        "lower": 153.25,
+        "upper": 195.25,
+        "covered": true
+      },
+      {
+        "train_end": "2026-08-25",
+        "date": "2026-08-30",
+        "horizon": 5,
+        "actual": 176,
+        "prediction": 145.25,
+        "error": -30.75,
+        "lower": 124.25,
+        "upper": 166.25,
+        "covered": false
+      },
+      {
+        "train_end": "2026-08-25",
+        "date": "2026-08-31",
+        "horizon": 6,
+        "actual": 280,
+        "prediction": 245.25,
+        "error": -34.75,
+        "lower": 224.25,
+        "upper": 266.25,
+        "covered": false
+      },
+      {
+        "train_end": "2026-08-25",
+        "date": "2026-09-01",
+        "horizon": 7,
+        "actual": 258,
+        "prediction": 238.5,
+        "error": -19.5,
+        "lower": 217.5,
+        "upper": 259.5,
+        "covered": true
+      },
+      {
+        "train_end": "2026-09-01",
+        "date": "2026-09-02",
+        "horizon": 1,
+        "actual": 243,
+        "prediction": 251.25,
+        "error": 8.25,
+        "lower": 230.25,
+        "upper": 272.25,
+        "covered": true
+      },
+      {
+        "train_end": "2026-09-01",
+        "date": "2026-09-03",
+        "horizon": 2,
+        "actual": 231,
+        "prediction": 229.75,
+        "error": -1.25,
+        "lower": 208.75,
+        "upper": 250.75,
+        "covered": true
+      },
+      {
+        "train_end": "2026-09-01",
+        "date": "2026-09-04",
+        "horizon": 3,
+        "actual": 239,
+        "prediction": 236.5,
+        "error": -2.5,
+        "lower": 215.5,
+        "upper": 257.5,
+        "covered": true
+      },
+      {
+        "train_end": "2026-09-01",
+        "date": "2026-09-05",
+        "horizon": 4,
+        "actual": 174,
+        "prediction": 180.25,
+        "error": 6.25,
+        "lower": 159.25,
+        "upper": 201.25,
+        "covered": true
+      },
+      {
+        "train_end": "2026-09-01",
+        "date": "2026-09-06",
+        "horizon": 5,
+        "actual": 181,
+        "prediction": 157.25,
+        "error": -23.75,
+        "lower": 136.25,
+        "upper": 178.25,
+        "covered": false
+      },
+      {
+        "train_end": "2026-09-01",
+        "date": "2026-09-07",
+        "horizon": 6,
+        "actual": 278,
+        "prediction": 258.5,
+        "error": -19.5,
+        "lower": 237.5,
+        "upper": 279.5,
+        "covered": true
+      },
+      {
+        "train_end": "2026-09-01",
+        "date": "2026-09-08",
+        "horizon": 7,
+        "actual": 269,
+        "prediction": 248.75,
+        "error": -20.25,
+        "lower": 227.75,
+        "upper": 269.75,
+        "covered": true
+      },
+      {
+        "train_end": "2026-09-08",
+        "date": "2026-09-09",
+        "horizon": 1,
+        "actual": 249,
+        "prediction": 247.25,
+        "error": -1.75,
+        "lower": 226.25,
+        "upper": 268.25,
+        "covered": true
+      },
+      {
+        "train_end": "2026-09-08",
+        "date": "2026-09-10",
+        "horizon": 2,
+        "actual": 246,
+        "prediction": 235,
+        "error": -11,
+        "lower": 214,
+        "upper": 256,
+        "covered": true
+      },
+      {
+        "train_end": "2026-09-08",
+        "date": "2026-09-11",
+        "horizon": 3,
+        "actual": 227,
+        "prediction": 238.75,
+        "error": 11.75,
+        "lower": 217.75,
+        "upper": 259.75,
+        "covered": true
+      },
+      {
+        "train_end": "2026-09-08",
+        "date": "2026-09-12",
+        "horizon": 4,
+        "actual": 197,
+        "prediction": 178,
+        "error": -19,
+        "lower": 157,
+        "upper": 199,
+        "covered": true
+      },
+      {
+        "train_end": "2026-09-08",
+        "date": "2026-09-13",
+        "horizon": 5,
+        "actual": 142,
+        "prediction": 167.75,
+        "error": 25.75,
+        "lower": 146.75,
+        "upper": 188.75,
+        "covered": false
+      },
+      {
+        "train_end": "2026-09-08",
+        "date": "2026-09-14",
+        "horizon": 6,
+        "actual": 272,
+        "prediction": 265,
+        "error": -7,
+        "lower": 244,
+        "upper": 286,
+        "covered": true
+      },
+      {
+        "train_end": "2026-09-08",
+        "date": "2026-09-15",
+        "horizon": 7,
+        "actual": 245,
+        "prediction": 256.25,
+        "error": 11.25,
+        "lower": 235.25,
+        "upper": 277.25,
+        "covered": true
+      },
+      {
+        "train_end": "2026-09-15",
+        "date": "2026-09-16",
+        "horizon": 1,
+        "actual": 247,
+        "prediction": 245.25,
+        "error": -1.75,
+        "lower": 224.25,
+        "upper": 266.25,
+        "covered": true
+      },
+      {
+        "train_end": "2026-09-15",
+        "date": "2026-09-17",
+        "horizon": 2,
+        "actual": 246,
+        "prediction": 238.25,
+        "error": -7.75,
+        "lower": 217.25,
+        "upper": 259.25,
+        "covered": true
+      },
+      {
+        "train_end": "2026-09-15",
+        "date": "2026-09-18",
+        "horizon": 3,
+        "actual": 235,
+        "prediction": 236.25,
+        "error": 1.25,
+        "lower": 215.25,
+        "upper": 257.25,
+        "covered": true
+      },
+      {
+        "train_end": "2026-09-15",
+        "date": "2026-09-19",
+        "horizon": 4,
+        "actual": 172,
+        "prediction": 180,
+        "error": 8,
+        "lower": 159,
+        "upper": 201,
+        "covered": true
+      },
+      {
+        "train_end": "2026-09-15",
+        "date": "2026-09-20",
+        "horizon": 5,
+        "actual": 182,
+        "prediction": 163.75,
+        "error": -18.25,
+        "lower": 142.75,
+        "upper": 184.75,
+        "covered": true
+      },
+      {
+        "train_end": "2026-09-15",
+        "date": "2026-09-21",
+        "horizon": 6,
+        "actual": 272,
+        "prediction": 272,
+        "error": 0,
+        "lower": 251,
+        "upper": 293,
+        "covered": true
+      },
+      {
+        "train_end": "2026-09-15",
+        "date": "2026-09-22",
+        "horizon": 7,
+        "actual": 262,
+        "prediction": 255.25,
+        "error": -6.75,
+        "lower": 234.25,
+        "upper": 276.25,
+        "covered": true
+      },
+      {
+        "train_end": "2026-09-22",
+        "date": "2026-09-23",
+        "horizon": 1,
+        "actual": 268,
+        "prediction": 245,
+        "error": -23,
+        "lower": 224,
+        "upper": 266,
+        "covered": false
+      },
+      {
+        "train_end": "2026-09-22",
+        "date": "2026-09-24",
+        "horizon": 2,
+        "actual": 251,
+        "prediction": 239.25,
+        "error": -11.75,
+        "lower": 218.25,
+        "upper": 260.25,
+        "covered": true
+      },
+      {
+        "train_end": "2026-09-22",
+        "date": "2026-09-25",
+        "horizon": 3,
+        "actual": 239,
+        "prediction": 233.25,
+        "error": -5.75,
+        "lower": 212.25,
+        "upper": 254.25,
+        "covered": true
+      },
+      {
+        "train_end": "2026-09-22",
+        "date": "2026-09-26",
+        "horizon": 4,
+        "actual": 172,
+        "prediction": 176,
+        "error": 4,
+        "lower": 155,
+        "upper": 197,
+        "covered": true
+      },
+      {
+        "train_end": "2026-09-22",
+        "date": "2026-09-27",
+        "horizon": 5,
+        "actual": 176,
+        "prediction": 170.25,
+        "error": -5.75,
+        "lower": 149.25,
+        "upper": 191.25,
+        "covered": true
+      },
+      {
+        "train_end": "2026-09-22",
+        "date": "2026-09-28",
+        "horizon": 6,
+        "actual": 281,
+        "prediction": 275.5,
+        "error": -5.5,
+        "lower": 254.5,
+        "upper": 296.5,
+        "covered": true
+      },
+      {
+        "train_end": "2026-09-22",
+        "date": "2026-09-29",
+        "horizon": 7,
+        "actual": 247,
+        "prediction": 258.5,
+        "error": 11.5,
+        "lower": 237.5,
+        "upper": 279.5,
+        "covered": true
+      }
+    ],
+    "weekday_trend8": [
+      {
+        "train_end": "2026-08-04",
+        "date": "2026-08-05",
+        "horizon": 1,
+        "actual": 259,
+        "prediction": 227.14285714285714,
+        "error": -31.85714285714286
+      },
+      {
+        "train_end": "2026-08-04",
+        "date": "2026-08-06",
+        "horizon": 2,
+        "actual": 210,
+        "prediction": 196.21428571428572,
+        "error": -13.785714285714278
+      },
+      {
+        "train_end": "2026-08-04",
+        "date": "2026-08-07",
+        "horizon": 3,
+        "actual": 230,
+        "prediction": 200.67857142857142,
+        "error": -29.321428571428584
+      },
+      {
+        "train_end": "2026-08-04",
+        "date": "2026-08-08",
+        "horizon": 4,
+        "actual": 183,
+        "prediction": 148.21428571428572,
+        "error": -34.78571428571428
+      },
+      {
+        "train_end": "2026-08-04",
+        "date": "2026-08-09",
+        "horizon": 5,
+        "actual": 139,
+        "prediction": 137.92857142857142,
+        "error": -1.0714285714285836
+      },
+      {
+        "train_end": "2026-08-04",
+        "date": "2026-08-10",
+        "horizon": 6,
+        "actual": 252,
+        "prediction": 233.64285714285714,
+        "error": -18.35714285714286
+      },
+      {
+        "train_end": "2026-08-04",
+        "date": "2026-08-11",
+        "horizon": 7,
+        "actual": 239,
+        "prediction": 218.35714285714286,
+        "error": -20.64285714285714
+      },
+      {
+        "train_end": "2026-08-11",
+        "date": "2026-08-12",
+        "horizon": 1,
+        "actual": 257,
+        "prediction": 247.78571428571428,
+        "error": -9.214285714285722
+      },
+      {
+        "train_end": "2026-08-11",
+        "date": "2026-08-13",
+        "horizon": 2,
+        "actual": 233,
+        "prediction": 204.92857142857142,
+        "error": -28.071428571428584
+      },
+      {
+        "train_end": "2026-08-11",
+        "date": "2026-08-14",
+        "horizon": 3,
+        "actual": 237,
+        "prediction": 221.14285714285714,
+        "error": -15.857142857142861
+      },
+      {
+        "train_end": "2026-08-11",
+        "date": "2026-08-15",
+        "horizon": 4,
+        "actual": 189,
+        "prediction": 165.60714285714286,
+        "error": -23.39285714285714
+      },
+      {
+        "train_end": "2026-08-11",
+        "date": "2026-08-16",
+        "horizon": 5,
+        "actual": 158,
+        "prediction": 146.5,
+        "error": -11.5
+      },
+      {
+        "train_end": "2026-08-11",
+        "date": "2026-08-17",
+        "horizon": 6,
+        "actual": 244,
+        "prediction": 242.96428571428572,
+        "error": -1.0357142857142776
+      },
+      {
+        "train_end": "2026-08-11",
+        "date": "2026-08-18",
+        "horizon": 7,
+        "actual": 249,
+        "prediction": 234.71428571428572,
+        "error": -14.285714285714278
+      },
+      {
+        "train_end": "2026-08-18",
+        "date": "2026-08-19",
+        "horizon": 1,
+        "actual": 248,
+        "prediction": 265.14285714285717,
+        "error": 17.142857142857167
+      },
+      {
+        "train_end": "2026-08-18",
+        "date": "2026-08-20",
+        "horizon": 2,
+        "actual": 242,
+        "prediction": 218.60714285714286,
+        "error": -23.39285714285714
+      },
+      {
+        "train_end": "2026-08-18",
+        "date": "2026-08-21",
+        "horizon": 3,
+        "actual": 247,
+        "prediction": 242.5,
+        "error": -4.5
+      },
+      {
+        "train_end": "2026-08-18",
+        "date": "2026-08-22",
+        "horizon": 4,
+        "actual": 188,
+        "prediction": 183.46428571428572,
+        "error": -4.535714285714278
+      },
+      {
+        "train_end": "2026-08-18",
+        "date": "2026-08-23",
+        "horizon": 5,
+        "actual": 156,
+        "prediction": 156.5,
+        "error": 0.5
+      },
+      {
+        "train_end": "2026-08-18",
+        "date": "2026-08-24",
+        "horizon": 6,
+        "actual": 258,
+        "prediction": 245.21428571428572,
+        "error": -12.785714285714278
+      },
+      {
+        "train_end": "2026-08-18",
+        "date": "2026-08-25",
+        "horizon": 7,
+        "actual": 249,
+        "prediction": 246.82142857142856,
+        "error": -2.178571428571445
+      },
+      {
+        "train_end": "2026-08-25",
+        "date": "2026-08-26",
+        "horizon": 1,
+        "actual": 241,
+        "prediction": 265.32142857142856,
+        "error": 24.321428571428555
+      },
+      {
+        "train_end": "2026-08-25",
+        "date": "2026-08-27",
+        "horizon": 2,
+        "actual": 234,
+        "prediction": 231.53571428571428,
+        "error": -2.4642857142857224
+      },
+      {
+        "train_end": "2026-08-25",
+        "date": "2026-08-28",
+        "horizon": 3,
+        "actual": 232,
+        "prediction": 261.0,
+        "error": 29.0
+      },
+      {
+        "train_end": "2026-08-25",
+        "date": "2026-08-29",
+        "horizon": 4,
+        "actual": 161,
+        "prediction": 191.25,
+        "error": 30.25
+      },
+      {
+        "train_end": "2026-08-25",
+        "date": "2026-08-30",
+        "horizon": 5,
+        "actual": 176,
+        "prediction": 164.78571428571428,
+        "error": -11.214285714285722
+      },
+      {
+        "train_end": "2026-08-25",
+        "date": "2026-08-31",
+        "horizon": 6,
+        "actual": 280,
+        "prediction": 256.25,
+        "error": -23.75
+      },
+      {
+        "train_end": "2026-08-25",
+        "date": "2026-09-01",
+        "horizon": 7,
+        "actual": 258,
+        "prediction": 254.82142857142858,
+        "error": -3.1785714285714164
+      },
+      {
+        "train_end": "2026-09-01",
+        "date": "2026-09-02",
+        "horizon": 1,
+        "actual": 243,
+        "prediction": 260.7857142857143,
+        "error": 17.785714285714278
+      },
+      {
+        "train_end": "2026-09-01",
+        "date": "2026-09-03",
+        "horizon": 2,
+        "actual": 231,
+        "prediction": 242.10714285714286,
+        "error": 11.107142857142861
+      },
+      {
+        "train_end": "2026-09-01",
+        "date": "2026-09-04",
+        "horizon": 3,
+        "actual": 239,
+        "prediction": 259.10714285714283,
+        "error": 20.107142857142833
+      },
+      {
+        "train_end": "2026-09-01",
+        "date": "2026-09-05",
+        "horizon": 4,
+        "actual": 174,
+        "prediction": 182.89285714285714,
+        "error": 8.892857142857139
+      },
+      {
+        "train_end": "2026-09-01",
+        "date": "2026-09-06",
+        "horizon": 5,
+        "actual": 181,
+        "prediction": 176.46428571428572,
+        "error": -4.535714285714278
+      },
+      {
+        "train_end": "2026-09-01",
+        "date": "2026-09-07",
+        "horizon": 6,
+        "actual": 278,
+        "prediction": 273.64285714285717,
+        "error": -4.357142857142833
+      },
+      {
+        "train_end": "2026-09-01",
+        "date": "2026-09-08",
+        "horizon": 7,
+        "actual": 269,
+        "prediction": 263.7857142857143,
+        "error": -5.214285714285722
+      },
+      {
+        "train_end": "2026-09-08",
+        "date": "2026-09-09",
+        "horizon": 1,
+        "actual": 249,
+        "prediction": 252.21428571428572,
+        "error": 3.2142857142857224
+      },
+      {
+        "train_end": "2026-09-08",
+        "date": "2026-09-10",
+        "horizon": 2,
+        "actual": 246,
+        "prediction": 250.67857142857144,
+        "error": 4.678571428571445
+      },
+      {
+        "train_end": "2026-09-08",
+        "date": "2026-09-11",
+        "horizon": 3,
+        "actual": 227,
+        "prediction": 263.07142857142856,
+        "error": 36.071428571428555
+      },
+      {
+        "train_end": "2026-09-08",
+        "date": "2026-09-12",
+        "horizon": 4,
+        "actual": 197,
+        "prediction": 186.28571428571428,
+        "error": -10.714285714285722
+      },
+      {
+        "train_end": "2026-09-08",
+        "date": "2026-09-13",
+        "horizon": 5,
+        "actual": 142,
+        "prediction": 183.17857142857142,
+        "error": 41.178571428571416
+      },
+      {
+        "train_end": "2026-09-08",
+        "date": "2026-09-14",
+        "horizon": 6,
+        "actual": 272,
+        "prediction": 287.9642857142857,
+        "error": 15.964285714285722
+      },
+      {
+        "train_end": "2026-09-08",
+        "date": "2026-09-15",
+        "horizon": 7,
+        "actual": 245,
+        "prediction": 274.7857142857143,
+        "error": 29.785714285714278
+      },
+      {
+        "train_end": "2026-09-15",
+        "date": "2026-09-16",
+        "horizon": 1,
+        "actual": 247,
+        "prediction": 255.35714285714286,
+        "error": 8.357142857142861
+      },
+      {
+        "train_end": "2026-09-15",
+        "date": "2026-09-17",
+        "horizon": 2,
+        "actual": 246,
+        "prediction": 255.53571428571428,
+        "error": 9.535714285714278
+      },
+      {
+        "train_end": "2026-09-15",
+        "date": "2026-09-18",
+        "horizon": 3,
+        "actual": 235,
+        "prediction": 247.67857142857144,
+        "error": 12.678571428571445
+      },
+      {
+        "train_end": "2026-09-15",
+        "date": "2026-09-19",
+        "horizon": 4,
+        "actual": 172,
+        "prediction": 199.07142857142858,
+        "error": 27.071428571428584
+      },
+      {
+        "train_end": "2026-09-15",
+        "date": "2026-09-20",
+        "horizon": 5,
+        "actual": 182,
+        "prediction": 170.03571428571428,
+        "error": -11.964285714285722
+      },
+      {
+        "train_end": "2026-09-15",
+        "date": "2026-09-21",
+        "horizon": 6,
+        "actual": 272,
+        "prediction": 290.0357142857143,
+        "error": 18.035714285714278
+      },
+      {
+        "train_end": "2026-09-15",
+        "date": "2026-09-22",
+        "horizon": 7,
+        "actual": 262,
+        "prediction": 268.60714285714283,
+        "error": 6.607142857142833
+      },
+      {
+        "train_end": "2026-09-22",
+        "date": "2026-09-23",
+        "horizon": 1,
+        "actual": 268,
+        "prediction": 251.32142857142858,
+        "error": -16.678571428571416
+      },
+      {
+        "train_end": "2026-09-22",
+        "date": "2026-09-24",
+        "horizon": 2,
+        "actual": 251,
+        "prediction": 260.14285714285717,
+        "error": 9.142857142857167
+      },
+      {
+        "train_end": "2026-09-22",
+        "date": "2026-09-25",
+        "horizon": 3,
+        "actual": 239,
+        "prediction": 237.46428571428572,
+        "error": -1.5357142857142776
+      },
+      {
+        "train_end": "2026-09-22",
+        "date": "2026-09-26",
+        "horizon": 4,
+        "actual": 172,
+        "prediction": 188.14285714285714,
+        "error": 16.14285714285714
+      },
+      {
+        "train_end": "2026-09-22",
+        "date": "2026-09-27",
+        "horizon": 5,
+        "actual": 176,
+        "prediction": 183.57142857142858,
+        "error": 7.571428571428584
+      },
+      {
+        "train_end": "2026-09-22",
+        "date": "2026-09-28",
+        "horizon": 6,
+        "actual": 281,
+        "prediction": 289.25,
+        "error": 8.25
+      },
+      {
+        "train_end": "2026-09-22",
+        "date": "2026-09-29",
+        "horizon": 7,
+        "actual": 247,
+        "prediction": 270.67857142857144,
+        "error": 23.678571428571445
+      }
+    ]
+  },
+  "next_week": [
+    {
+      "date": "2026-09-30",
+      "prediction": 251.75,
+      "lower": 230.75,
+      "upper": 272.75
+    },
+    {
+      "date": "2026-10-01",
+      "prediction": 243.5,
+      "lower": 222.5,
+      "upper": 264.5
+    },
+    {
+      "date": "2026-10-02",
+      "prediction": 235,
+      "lower": 214,
+      "upper": 256
+    },
+    {
+      "date": "2026-10-03",
+      "prediction": 178.75,
+      "lower": 157.75,
+      "upper": 199.75
+    },
+    {
+      "date": "2026-10-04",
+      "prediction": 170.25,
+      "lower": 149.25,
+      "upper": 191.25
+    },
+    {
+      "date": "2026-10-05",
+      "prediction": 275.75,
+      "lower": 254.75,
+      "upper": 296.75
+    },
+    {
+      "date": "2026-10-06",
+      "prediction": 255.75,
+      "lower": 234.75,
+      "upper": 276.75
+    }
+  ]
+}
